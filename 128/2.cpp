@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 int main(void){
   int N;
@@ -11,7 +13,5 @@ int main(void){
     }
   }
 
-
+  sort(vec.begi
 }
-
-
