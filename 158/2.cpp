@@ -8,20 +8,11 @@
 using namespace std;
 
 int main(){
-  long long i, j, N, A, B;
-    string C[1000];
+  long long N, A, B;
   cin >> N >> A >> B;
-  int sum = A + B;
-  int count = 0;
-  int ans = 0;
-  while(count > N){
-    for(int i = count; i < count + A; i++)cin >> C[count];
-    count += A;
-    for(int j = count; j < count + B; j++)cin >> C[count];
-    count += B;
-  }
-  rep(i, N){
-    if(C[i]& == "b")ans++;
-  }
+  long long ans =A * (N / (A + B));
+  //ans *= A;
+  long long diff = N % (A + B);
+  ans += min(diff, A);
   cout << ans << endl;
 }
