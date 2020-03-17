@@ -16,8 +16,15 @@
 using namespace std;
 
 signed main(){
-  string n;
-  cin >> n;
+  int N;
+  cin >> N;
+  int ans = 0;
 
-  
+  for(int i = 1; i <= N; i++){
+    //string i;
+    string stringi = to_string(i);
+    if(stringi.length() % 2 == 1)ans++;
+  }
+
+  cout << ans << endl;
 }
