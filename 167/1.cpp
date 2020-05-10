@@ -16,14 +16,15 @@ typedef long long ll;
 using namespace std;
 
 signed main(){
-  int x;
-  cin >> x;
-  for(int i = -120; i < 120; i++){
-    for(int j = -120; j < 120; j++){
-      if(i ^ 5 - j ^ 5 == x){
-        cout << i << j << endl;
-        return 0;
-      }
+  string a, b;
+  cin >> a >> b;
+
+  int l = a.size();
+  for(int i = 0; i < l; i++){
+    if(a[i] != b[i]){
+      cout << "No" << endl;
+      return 0;
     }
   }
+  cout << "Yes" << endl;
 }

@@ -16,14 +16,21 @@ typedef long long ll;
 using namespace std;
 
 signed main(){
-  int x;
-  cin >> x;
-  for(int i = -120; i < 120; i++){
-    for(int j = -120; j < 120; j++){
-      if(i ^ 5 - j ^ 5 == x){
-        cout << i << j << endl;
-        return 0;
-      }
+  ll a, b, c, k;
+  cin >> a >> b >> c >> k;
+  ll A = a;
+  
+  if(a > k){
+    cout << k << endl;
+    return 0;
+  }else if(a + b >= k){
+    cout << a << endl;
+    return 0;
+  }else{
+    for(int i = 1; i <= k - a - b; i++){
+      A -= 1;
     }
+    cout << A << endl;
+    return 0;
   }
 }

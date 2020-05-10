@@ -21,5 +21,5 @@ signed main(){
   vector<int> H(n, 0);
   rep(i, n)cin >> H[i];
 
-
+  
 }
